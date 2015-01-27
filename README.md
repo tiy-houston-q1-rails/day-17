@@ -27,6 +27,7 @@ Today:
 Getting Middleman to deploy to GitHub Pages
 ----------
 
+1. Make sure you can `git push origin master` - if not, add as a remote
 1. Add gem to Gemfile `gem 'middleman-deploy', '~> 1.0'`
 1. Run Bundle `bundle`
 1. Add to config at bottom:  
