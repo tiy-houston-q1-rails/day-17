@@ -46,6 +46,10 @@ end
   set :relative_links, true
 ```
 
+1. Run `middleman build`
+1. Run `middleman deploy`
+1. profit
+
 
 
 
