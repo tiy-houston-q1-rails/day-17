@@ -29,7 +29,7 @@ Getting Middleman to deploy to GitHub Pages
 
 1. Add gem to Gemfile `gem 'middleman-deploy', '~> 1.0'`
 1. Run Bundle `bundle`
-1. Add to config at bottom:
+1. Add to config at bottom:  
   ```ruby
   activate :deploy do |deploy|
     deploy.method = :git
@@ -40,7 +40,7 @@ Getting Middleman to deploy to GitHub Pages
     # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
   end
   ```
-1. Add inside `config` block:
+1. Add inside `config` block:  
     ```ruby
       activate :relative_assets
       set :relative_links, true
