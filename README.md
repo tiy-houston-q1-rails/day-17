@@ -24,6 +24,32 @@ Today:
 1. Middleman deploy and GitHub Pages
 
 
+Getting Middleman to deploy to GitHub Pages
+----------
+
+1. Add gem to Gemfile `gem 'middleman-deploy', '~> 1.0'`
+1. Run Bundle `bundle`
+1. Add to config at bottom:
+  ```ruby
+  activate :deploy do |deploy|
+    deploy.method = :git
+    # Optional Settings
+    # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
+    # deploy.branch   = 'custom-branch' # default: gh-pages
+    # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
+    # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
+  end
+  ```
+1. Add inside `config` block:
+    ```ruby
+      activate :relative_assets
+      set :relative_links, true
+    ```
+
+
+
+
+
 Homework
 --------
 
